@@ -1,10 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
 * {
     border: 0;
     padding: 0;
     margin: 0;
 }
+
+:root {
+    --black: #4D4C59;
+    --purple: #6C63FF;
+    --light-grey: #C8C8C8;
+    --text-color: #9C9AB6;
+  }
 
 body {
     display: grid;
@@ -27,6 +34,56 @@ main {
     display: grid;
     grid-area: content;
 
+    align-items: center;
+    font-family: "Poppins";
+}
+
+main div.content {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+main tr:nth-child(1) {
+    font-size: 48px;
+    color: var(--purple);
+
+    text-align: center;
+}
+
+main tr:nth-child(2) {
+    font-size: 12px;
+    color: var(--light-grey);
+
+    text-align: center;
+}
+
+main tr:nth-child(3) {
+    font-size: 64px;
+    color: var(--black);
+
+    text-align: center;
+}
+
+main p {
+    font-size: 12px;
+    color: var(--text-color);
+
+    margin: 24px 0;
+}
+
+main button {
+    padding: 16px;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: var(--purple);
+
+    border-radius: 8px;
+}
+
+main button:hover {
+    cursor: pointer;
 }
 
 section {
